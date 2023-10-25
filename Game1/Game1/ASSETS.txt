@@ -1,0 +1,5 @@
+﻿Content/apple32.png - created by Josh Munda on Piskel.com (https://www.piskelapp.com/p/create/sprite)
+
+Content/farmer32.png - created by Josh Munda on Piskel.com (https://www.piskelapp.com/p/create/sprite)
+
+Content/field.tmx - created by Josh Munda using Tiled Software referenced from "RPG Nature Tileset - Seasons" created by Stealthix on itch.io (https://stealthix.itch.io/rpg-nature-tileset) and released under CC-0

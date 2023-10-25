@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TiledSharp;
 
 namespace Game1
 {
@@ -11,6 +12,7 @@ namespace Game1
     {
         private List<Apple> apples = new List<Apple>();
         private Random random = new Random();
+        readonly TmxMap map;
 
         public void Initialize(int numberOfApples, int mapWidth, int mapHeight)
         {
@@ -18,7 +20,7 @@ namespace Game1
             {
                 int x = random.Next(mapWidth);
                 int y = random.Next(mapHeight);
-                apples.Add(new Apple { Position = new Vector2(x, y), IsCollected = false });
+                apples.Add(new Apple(new Vector2(x, y)) { IsCollected = false });
             }
         }
 
