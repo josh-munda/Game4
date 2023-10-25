@@ -13,13 +13,21 @@ namespace Game1
     public class Tilemap
     {
         private TmxMap map;
-        List<Rectangle> collisionRectangles = new List<Rectangle>();
+        List<Rectangle> collisionRectangles = new();
         Texture2D pixel;
         private Texture2D tilesetImage;
+
+        public float Width { get; internal set; }
+        public float Height { get; internal set; }
 
         public Tilemap(TmxMap map)        
         {
             this.map = map;
+        }
+
+        public List<Rectangle> CollisionRectangles()
+        {
+            return collisionRectangles;
         }
 
         public void LoadContent(ContentManager content, GraphicsDevice graphics)
@@ -32,7 +40,7 @@ namespace Game1
             LoadCollisionObjects(map);
         }
 
-        private void LoadCollisionObjects(TmxMap map)
+        public void LoadCollisionObjects(TmxMap map)
         {
             collisionRectangles = new List<Rectangle>();
 

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using TiledSharp;
 
 namespace Game1
 {
@@ -28,6 +29,8 @@ namespace Game1
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
             // TODO: use this.Content to load your game content here
+
+            TmxMap map = Content.Load<TmxMap>("Content/field");
         }
 
         protected override void Update(GameTime gameTime)

@@ -2494,6 +2494,19 @@
         "runtime": {
           "lib/netstandard2.0/TiledSharp.dll": {}
         }
+      },
+      "PipelineExtension/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "TiledSharp": "1.0.1"
+        },
+        "compile": {
+          "bin/placeholder/PipelineExtension.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PipelineExtension.dll": {}
+        }
       }
     }
   },
@@ -7544,12 +7557,18 @@
         "tiledsharp.1.0.1.nupkg.sha512",
         "tiledsharp.nuspec"
       ]
+    },
+    "PipelineExtension/1.0.0": {
+      "type": "project",
+      "path": "../PipelineExtension/PipelineExtension.csproj",
+      "msbuildProject": "../PipelineExtension/PipelineExtension.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "MonoGame.Content.Builder.Task >= 3.8.1.303",
       "MonoGame.Framework.WindowsDX >= 3.8.1.303",
+      "PipelineExtension >= 1.0.0",
       "TiledSharp >= 1.0.1"
     ]
   },
@@ -7585,7 +7604,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Josh\\Desktop\\week9Game\\Game1\\PipelineExtension\\PipelineExtension.csproj": {
+              "projectPath": "C:\\Users\\Josh\\Desktop\\week9Game\\Game1\\PipelineExtension\\PipelineExtension.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

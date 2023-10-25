@@ -1,0 +1,12 @@
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\bin\Debug\net6.0\PipelineExtension.deps.json
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\bin\Debug\net6.0\PipelineExtension.dll
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\bin\Debug\net6.0\PipelineExtension.pdb
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.csproj.AssemblyReference.cache
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.AssemblyInfoInputs.cache
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.AssemblyInfo.cs
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.csproj.CoreCompileInputs.cache
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.dll
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\refint\PipelineExtension.dll
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\PipelineExtension.pdb
+C:\Users\Josh\Desktop\week9Game\Game1\PipelineExtension\obj\Debug\net6.0\ref\PipelineExtension.dll
