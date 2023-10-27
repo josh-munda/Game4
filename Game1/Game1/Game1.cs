@@ -2,10 +2,14 @@
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+//using Newtonsoft.Json;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
 using TiledSharp;
 using Color = Microsoft.Xna.Framework.Color;
+using System.Text.Json;
+using System.IO;
 
 namespace Game1
 {
@@ -20,6 +24,8 @@ namespace Game1
         private Vector2 _position = new Vector2(10,10);
         private float _speed;
         private AppleManager _appleManager;
+        private PlayerStats _pStats;
+        private const string PATH = "stats.json";
 
         public Game1()
         {
@@ -50,6 +56,15 @@ namespace Game1
             _apple.LoadContent(content);
             _tilemap.LoadContent(content, graphics);
             //_tmxMap = content.Load<TmxMap>("field");
+
+            _pStats = new PlayerStats()
+            {
+                PlayerPosition = new Vector2(10,10)
+            };
+            Save(_pStats);
+
+            _pStats = Load();
+            Trace.WriteLine($"{ _pStats.PlayerPosition} ");
 
             //TmxMap map = Content.Load<TmxMap>("Content/field");
         }
@@ -83,6 +98,19 @@ namespace Game1
             _spriteBatch.End();
 
             base.Draw(gameTime);
+        }
+
+        private void Save(PlayerStats stats)
+        {
+            string serializedText = JsonSerializer.Serialize<PlayerStats>(stats);
+            Trace.WriteLine(serializedText);
+            File.WriteAllText(PATH, serializedText);
+        }
+
+        private PlayerStats Load()
+        {
+            var fileContent = File.ReadAllText(PATH);
+            return JsonSerializer.Deserialize<PlayerStats>(fileContent);
         }
     }
 }
